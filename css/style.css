@@ -14,6 +14,10 @@ body {
 
 }
 
+section {
+    padding-top: 50px;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -41,6 +45,11 @@ a {
     background-color: green;
 }
 
+.box-50 {
+    flex-basis: 50%;
+    background-color: blue;
+}
+
 .box60 {
     flex-basis: 60%;
     background-color: orangered;
@@ -55,7 +64,32 @@ a {
     gap: 10px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.col {
+    flex-basis: calc(100% / 3 - 20px / 3);
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.col-100 {
+    flex-basis: 100%;
+    padding: 0 20px;
+}
+
+.col-20 {
+    flex-basis: calc(100% / 5);
+    border: 1px dashed white;
+}
+
+.bord {
+    border: 1px dashed black;
+}
 
 /** header  */
 
@@ -89,5 +123,29 @@ a {
 
 /** main */
 
+.row span {
+    display: block;
+}
+
+.full-page {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card {
+    background-color: red;
+    height: 50%;
+    width: 50%;
+}
 
 /** footer */
+
+footer {
+    background-color: #000;
+    height: 400px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
