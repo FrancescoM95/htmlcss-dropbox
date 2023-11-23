@@ -7,12 +7,85 @@
 
 /*# Generics */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 60px;
+    position: relative;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
 
 /*# Utils */
+
+.container-lg {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box40 {
+    flex-basis: 40%;
+    background-color: green;
+}
+
+.box60 {
+    flex-basis: 60%;
+    background-color: orangered;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-10 {
+    display: flex;
+    gap: 10px;
+}
+
 
 
 /** header  */
 
+.navbar {
+    background-color: dodgerblue;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+
+    justify-content: space-between;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar a {
+    background-color: #fff;
+}
+
+.jumbo {
+    background-color: #b4d0e7;
+    padding-top: 50px;
+}
 
 /** main */
 
