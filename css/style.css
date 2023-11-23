@@ -26,19 +26,21 @@ img {
 a {
     color: #000;
     text-decoration: none;
+    font-size: 0.8rem;
 }
 
 /*# Utils */
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .container-lg {
     max-width: 960px;
     margin: 0 auto;
 }
 
-.container-sm {
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .box40 {
     flex-basis: 40%;
@@ -77,14 +79,22 @@ a {
     padding: 0 20px;
 }
 
+.col-20 {
+    flex-basis: calc(100% / 5);
+    border: 1px dashed white;
+}
+
 .col-100 {
     flex-basis: 100%;
     padding: 0 20px;
 }
 
-.col-20 {
-    flex-basis: calc(100% / 5);
-    border: 1px dashed white;
+.btn {
+    color: #fff;
+    background-color: #0061FF;
+    border: 1px solid #0061FF;
+    padding: 5px 15px;
+    font-size: 0.8rem;
 }
 
 .bord {
@@ -94,31 +104,44 @@ a {
 /** header  */
 
 .navbar {
-    background-color: dodgerblue;
+    background-color: #fff;
     height: 60px;
-    line-height: 60px;
     padding: 0 20px;
-
-    justify-content: space-between;
+    vertical-align: middle;
 
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     z-index: 1;
+
+    justify-content: space-between;
 }
 
 .navbar ul {
     list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .navbar a {
     background-color: #fff;
+    line-height: 60px;
+}
+
+#logo {
+    height: 20px;
 }
 
 .jumbo {
     background-color: #b4d0e7;
     padding-top: 50px;
+}
+
+.navbar .right-nav .btn {
+    translate: -25% 0;
 }
 
 /** main */
