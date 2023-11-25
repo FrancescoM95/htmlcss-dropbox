@@ -169,9 +169,9 @@ address {
 
 .btn.btn-small {
     color: #fff;
-    padding: 5px 10px;
     background-color: #0061FF;
     border: 1px solid #0061FF;
+    padding: 5px 10px;
 }
 
 .btn.btn-grey {
@@ -245,6 +245,7 @@ address {
 
 .navbar {
     background-color: #fff;
+    box-shadow: 0 0 5px grey;
     height: 70px;
     padding: 0 20px;
     display: flex;
