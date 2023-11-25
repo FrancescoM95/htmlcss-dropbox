@@ -12,11 +12,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     font-size: 0.8rem;
-    word-spacing: 2px;
 }
 
 section {
-    padding-top: 50px;
+    margin-top: 150px;
 }
 
 img {
@@ -38,12 +37,13 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 40px;
 }
 
 h3 {
     font-size: 1.2rem;
-    padding-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -53,6 +53,11 @@ h4 {
 ul {
     list-style-type: none;
     display: flex;
+}
+
+blockquote {
+    height: 250px;
+    margin-top: 40px;
 }
 
 /*# Utils */
@@ -77,21 +82,45 @@ ul {
     flex-basis: calc(100% / 3 - 80px / 3);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    position: relative;
-    padding: 40px 20px;
+    margin: 20px 0;
 }
 
 .col-20 {
     flex-basis: 20%;
 }
 
+.col-25 {
+    flex-basis: 25%;
+}
+
 .col-30 {
     flex-basis: 30%;
 }
 
+.col-33 {
+    flex-basis: calc(100% / 3);
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.col-40 {
+    flex-basis: 40%;
+    padding: 20px 40px 0 40px;
+}
+
+
 .col-50 {
+    color: #61082B;
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-60 {
+    flex-basis: 60%;
 }
 
 .col-70 {
@@ -101,12 +130,11 @@ ul {
 .col-100 {
     flex-basis: 100%;
     padding: 40px 0 20px 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     position: relative;
     display: flex;
     justify-content: space-between;
     gap: 100px;
-
 }
 
 .box-col {
@@ -118,10 +146,16 @@ ul {
     font-size: 0.8rem;
 }
 
-.gap-10 {
-    display: flex;
-    gap: 10px;
+.card {
+    height: 50%;
+    flex: 0 0 50%;
+    padding: 50px 60px;
 }
+
+.card-special {
+    width: 200px;
+}
+
 
 .btn {
     color: #fff;
@@ -139,14 +173,72 @@ ul {
     border: 1px solid #0061FF;
 }
 
+.btn.btn-grey {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.btn.btn-white {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    padding: 7px 30px;
+    align-self: flex-end;
+    position: relative;
+    bottom: 40px;
+}
+
 .separator {
     width: 40px;
     margin: 25px 0;
     border-top: 1px solid lightgray;
 }
 
+.big-separator {
+    width: 80px;
+    margin: 40 px 0;
+    border-top: 1px solid lightgray;
+}
+
 .bord {
     border: 1px solid lightgray;
+}
+
+/*! Card Color */
+
+.bg-green {
+    background-color: #A2D39B;
+}
+
+.bg-purple {
+    background-color: #61082B;
+}
+
+.bg-lightblue {
+    background-color: #0093CE;
+}
+
+.bg-orange {
+    background-color: #FF1C1C;
+}
+
+.bg-red {
+    background-color: #D5001F;
+}
+
+.bg-skyblue {
+    background-color: #B4D0E7;
+}
+
+.bg-blue {
+    background-color: #0D2481;
+}
+
+.bg-yellow {
+    background-color: #FFD830;
 }
 
 /** header  */
@@ -206,7 +298,7 @@ ul {
 }
 
 .checkbox {
-    margin: 40px 0;
+    margin-bottom: 40px;
 }
 
 .month {
@@ -226,7 +318,13 @@ main .btn {
     margin-bottom: 15px;
 }
 
-main p {
+#piani .col {
+    gap: 10px;
+    position: relative;
+    padding: 40px 25px;
+}
+
+.col-70 p {
     margin-top: 40px;
 }
 
@@ -264,17 +362,23 @@ main p {
 }
 
 .full-page {
-    height: 100vh;
-
+    height: calc(100vh + 70px);
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-
+    background-color: #B4D0E7;
 }
 
-.card {
-    background-color: red;
-    height: 50%;
-    width: 50%;
+.full-page .container-sm .row {
+    height: 300px;
+}
+
+.col-central {
+    padding: 10px 40px;
+}
+
+#FAQ ul>li {
+    border-top: 1px solid black;
 }
 
 /** footer */
