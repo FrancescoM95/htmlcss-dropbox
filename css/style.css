@@ -23,10 +23,6 @@ img {
     display: block;
 }
 
-a:visited {
-    color: #000;
-}
-
 h1 {
     font-size: 3.6rem;
     font-weight: 900;
@@ -56,8 +52,12 @@ ul {
 }
 
 blockquote {
-    height: 250px;
-    margin-top: 40px;
+    margin-top: 10px;
+}
+
+address {
+    font-style: normal;
+
 }
 
 /*# Utils */
@@ -194,7 +194,7 @@ blockquote {
 
 .separator {
     width: 40px;
-    margin: 25px 0;
+    margin: 15px 0;
     border-top: 1px solid lightgray;
 }
 
@@ -277,6 +277,10 @@ blockquote {
 .jumbotron {
     background-color: #b4d0e7;
     margin-bottom: 60px;
+}
+
+.jumbotron a:visited {
+    color: #000;
 }
 
 .jumbotron .container-lg {
@@ -374,13 +378,24 @@ main .btn {
 }
 
 .col-central {
-    padding: 10px 40px;
+    background-color: #F5F5F5;
+    padding: 40px;
+    flex-direction: column;
+    gap: 40px;
 }
 
-#FAQ ul>li {
+#FAQ .row div {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
     font-size: 0.8rem;
     font-weight: 600;
-    border-top: 1px solid black;
+    border-top: 1px solid gray;
+    display: inline-block;
+}
+
+.fa-angle-down {
+    margin-left: 250px;
 }
 
 /** footer */
@@ -388,7 +403,7 @@ main .btn {
 footer {
     background-color: #000;
     padding-top: 70px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 footer a {
