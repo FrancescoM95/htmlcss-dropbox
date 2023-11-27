@@ -166,12 +166,12 @@ address {
     cursor: pointer;
 }
 
-
 .btn.btn-small {
     color: #fff;
     background-color: #0061FF;
     border: 1px solid #0061FF;
     padding: 5px 10px;
+    margin-left: 20px;
 }
 
 .btn.btn-grey {
@@ -203,7 +203,6 @@ address {
     background-color: #dcdcdc;
     color: #3c3c3c;
     transition: 0.7s;
-
 }
 
 .separator {
@@ -274,9 +273,7 @@ address {
     z-index: 1;
 }
 
-.navbar ul {
-    gap: 30px;
-}
+.navbar ul {}
 
 
 .navbar a {
@@ -289,6 +286,7 @@ address {
 
 .navbar .li-bord {
     border-bottom: 2px solid transparent;
+    padding: 0 20px;
 }
 
 .navbar .li-bord:hover {
@@ -299,6 +297,7 @@ address {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 20px;
 }
 
 .jumbotron {
@@ -425,9 +424,23 @@ main .btn {
     height: 80px;
     line-height: 80px;
     font-size: 0.8rem;
-    font-weight: 600;
     border-top: 1px solid gray;
     display: inline-block;
+}
+
+#FAQ .row .faq-question {
+    font-weight: 700;
+    overflow: hidden;
+}
+
+#FAQ .row .faq-answer {
+    font-weight: 400;
+    border-top: 1px solid #fff;
+}
+
+#FAQ .row .faq-question:hover {
+    height: 160px;
+    overflow: visible;
 }
 
 .fa-angle-down {
