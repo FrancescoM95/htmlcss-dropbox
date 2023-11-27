@@ -51,13 +51,9 @@ ul {
     display: flex;
 }
 
-blockquote {
-    margin-top: 10px;
-}
-
 address {
     font-style: normal;
-
+    margin-top: 30px;
 }
 
 /*# Utils */
@@ -70,6 +66,12 @@ address {
 .container-lg {
     max-width: 960px;
     margin: 0 auto;
+}
+
+.container-100 {
+    width: 100vw;
+    display: flex;
+    padding-top: 100px;
 }
 
 .row {
@@ -96,14 +98,6 @@ address {
 
 .col-30 {
     flex-basis: 30%;
-}
-
-.col-33 {
-    flex-basis: calc(100% / 3);
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
 }
 
 .col-40 {
@@ -138,6 +132,37 @@ address {
     gap: 100px;
 }
 
+/*# BOX */
+
+.big-box {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.small-box {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-card {
+    padding: 50px;
+    background-color: #F5F5F5;
+}
+
+.big-box img {
+    width: 50%;
+}
+
+.small-box img {
+    filter: invert(1);
+}
+
 .box-col {
     display: flex;
     flex-direction: column;
@@ -147,16 +172,7 @@ address {
     font-size: 0.8rem;
 }
 
-.card {
-    height: 50%;
-    flex: 0 0 50%;
-    padding: 50px 60px;
-}
-
-.card-special {
-    width: 200px;
-}
-
+/*# BOTTONI */
 
 .btn {
     color: #fff;
@@ -201,6 +217,7 @@ address {
 .big-separator {
     width: 80px;
     border-top: 1px solid lightgray;
+    margin: 30px 0;
 }
 
 .bord {
@@ -247,6 +264,7 @@ address {
     background-color: #fff;
     box-shadow: 0 0 5px grey;
     height: 70px;
+    line-height: 70px;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -260,7 +278,6 @@ address {
 }
 
 .navbar ul {
-    align-items: center;
     gap: 30px;
 }
 
@@ -269,6 +286,11 @@ address {
     color: #000;
     text-decoration: none;
     font-size: 0.8rem;
+}
+
+.navbar li:hover {
+    border-bottom: 2px solid #000;
+
 }
 
 #logo {
@@ -280,6 +302,7 @@ address {
     margin-bottom: 60px;
 }
 
+.jumbotron a,
 .jumbotron a:visited {
     color: #000;
 }
@@ -366,23 +389,9 @@ main .btn {
     color: #0061FF;
 }
 
-.full-page {
-    height: calc(100vh + 70px);
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+.bg-special {
     background-color: #B4D0E7;
-}
-
-.full-page .container-sm .row {
-    height: 300px;
-}
-
-.col-central {
-    background-color: #F5F5F5;
-    padding: 40px;
-    flex-direction: column;
-    gap: 40px;
+    padding: 100px 0 60px 0;
 }
 
 #FAQ .row div {
