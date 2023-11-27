@@ -273,9 +273,6 @@ address {
     z-index: 1;
 }
 
-.navbar ul {}
-
-
 .navbar a {
     background-color: #fff;
     color: #000;
@@ -292,6 +289,36 @@ address {
 .navbar .li-bord:hover {
     border-color: #000;
 }
+
+.navbar .li-bord:hover .dropdown {
+    visibility: visible;
+}
+
+.dropdown {
+    background-color: #F2EEE8;
+    width: 200px;
+    padding-left: 20px;
+    position: absolute;
+    top: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translate(-20px);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #999999;
+    border-top-color: transparent;
+    box-shadow: 0 0 15px #999999;
+    visibility: hidden;
+}
+
+.navbar .dropdown a {
+    background-color: #F2EEE8;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 
 #logo {
     height: 20px;
@@ -359,7 +386,6 @@ main ul {
 main .btn {
     margin-bottom: 15px;
 }
-
 
 .circle {
     display: inline-block;
