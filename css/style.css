@@ -468,6 +468,7 @@ main .btn {
 #FAQ .row .faq-question:hover {
     height: 160px;
     overflow: visible;
+    transition: 0.5s;
 }
 
 .fa-angle-down {
