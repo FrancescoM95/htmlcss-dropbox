@@ -286,9 +286,10 @@ address {
     padding: 0 20px;
 }
 
-.navbar .li-bord:hover {
+/* todo: bordo su linl navbar */
+/* .navbar .li-bord:hover {
     border-color: #000;
-}
+} */
 
 .navbar .li-bord:hover .dropdown {
     visibility: visible;
@@ -296,8 +297,8 @@ address {
 
 .dropdown {
     background-color: #F2EEE8;
-    width: 200px;
-    padding-left: 20px;
+    width: 160px;
+    padding-left: 25px;
     position: absolute;
     top: 100%;
 
