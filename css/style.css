@@ -286,14 +286,10 @@ address {
     padding: 0 20px;
 }
 
-/* todo: bordo su linl navbar */
+/* todo: bordo su link navbar */
 /* .navbar .li-bord:hover {
     border-color: #000;
 } */
-
-.navbar .li-bord:hover .dropdown {
-    visibility: visible;
-}
 
 .dropdown {
     background-color: #F2EEE8;
@@ -312,6 +308,10 @@ address {
     border-top-color: transparent;
     box-shadow: 0 0 15px #999999;
     visibility: hidden;
+}
+
+.navbar .li-bord:hover .dropdown {
+    visibility: visible;
 }
 
 .navbar .dropdown a {
